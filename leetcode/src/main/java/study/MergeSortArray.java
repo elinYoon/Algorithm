@@ -9,6 +9,8 @@ public class MergeSortArray {
             if (nums1[i] >= nums2[j]) nums1[k--] = nums1[i--]; // 본인이 크면 뒤로 밀음
             else nums1[k--] = nums2[j--]; // 두번째 게 크면 채
         }
+        while(j>=0)
+            nums1[k--] = nums2[j--];
     }
 
     public static void main(String[] args) {
